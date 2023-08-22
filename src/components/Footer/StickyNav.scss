@@ -1,0 +1,40 @@
+@import "../../style.scss";
+
+.sticky-nav ul li{
+  @include themify($themes) {
+    // -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    // -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    // box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    border-bottom: 1px solid themed("border");
+
+    background-color: themed("bg");
+    color:themed("textColor");
+    z-index: 999;
+    svg{
+      color:themed("textColor");
+      background-color: themed("bg");
+    }
+  }
+}
+.sticky-nav ul li .active{
+  @include themify($themes) {
+    // -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    // -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    // box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+   
+    background:red;
+    color:themed("textColor");
+    z-index: 999;
+    svg{
+     
+      background-color: themed("bg");
+    }
+  }
+}
+
+.sticky-nav{
+  @include themify($themes) {
+    background-color: themed("bg");
+  }
+
+}
